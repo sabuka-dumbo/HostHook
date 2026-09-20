@@ -190,3 +190,14 @@
     align-items: center;
     border-radius: 8px;
 }
+
+@media (max-width: 740px) {
+    .services-container {
+        gap: 16px;
+    }
+
+    .service-part1 {
+        width: 50%;
+        gap: 8px;
+    }
+}
