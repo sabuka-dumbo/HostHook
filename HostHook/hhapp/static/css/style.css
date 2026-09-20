@@ -191,6 +191,44 @@
     border-radius: 8px;
 }
 
+.card-section {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.card-part1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.card-image {
+    width: 100%;
+    height: max-content;
+    aspect-ratio: 16/9;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.card-part2 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 740px) {
     .services-container {
         gap: 16px;
