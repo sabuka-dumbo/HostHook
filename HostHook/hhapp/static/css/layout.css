@@ -23,6 +23,7 @@ main {
     padding-top: 144px;
     padding-bottom: 64px;
     box-sizing: border-box;
+    gap: 64px;
 }
 
 .nav-part1, .nav-part2 {
