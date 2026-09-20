@@ -122,3 +122,26 @@
     margin: 0;
     padding: 0;
 }
+
+.services-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 64px;
+    background-color: #f9f9f9;
+}
+
+.service-part1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.service-part2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
