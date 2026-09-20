@@ -289,6 +289,14 @@
     font-family: 'Arial', sans-serif;
 }
 
+.start-content {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 @media (max-width: 740px) {
     .services-container {
         gap: 16px;
