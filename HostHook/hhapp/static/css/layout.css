@@ -112,10 +112,10 @@ footer {
     border-top: 1px solid black;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 64px;
 }
 
-.part1 {
+.fpart1 {
     width: 100%;
     height: max-content;
     display: flex;
@@ -190,7 +190,7 @@ footer {
 
 .p2-p1 h1 {
     width: max-content;
-    max-width: 70%;
+    max-width: 100%;
     font-size: 12px;
     font-family: 'Arial', sans-serif;
     font-weight: lighter;
@@ -198,6 +198,28 @@ footer {
     height: max-content;
     margin: 0;
     padding: 0;
+}
+
+.p2-p1 {
+    width: 70%;
+}
+
+.p2-p2 {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: end;
+}
+
+.fpart2 {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid gainsboro;
+    padding-top: 16px;
 }
 
 @media (max-width: 768px) {
