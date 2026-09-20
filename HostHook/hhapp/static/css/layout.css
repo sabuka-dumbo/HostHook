@@ -261,7 +261,7 @@ footer {
         left: 0px;
         position: absolute;
         /* top: calc(48px + (16px * 2)); */
-        top: -100%;
+        top: -400px;
         display: none;
         flex-direction: column;
         align-items: center;
@@ -380,5 +380,25 @@ footer {
     100% {
         rotate: 0deg;
         top: 0px;
+    }
+}
+
+@keyframes open-navmenu {
+    0% {
+        top: -400px;
+    }
+
+    100% {
+        top: calc(48px + (16px * 2));
+    }
+}
+
+@keyframes close-navmenu {
+    0% {
+        top: calc(48px + (16px * 2));
+    }
+
+    100% {
+        top: -400%;
     }
 }
