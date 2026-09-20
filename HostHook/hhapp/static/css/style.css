@@ -200,4 +200,24 @@
         width: 50%;
         gap: 8px;
     }
+
+    .service-image {
+        height: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-container {
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .service-part1 {
+        width: 50%;
+        gap: 8px;
+    }
+
+    .service-image {
+        height: 100%;
+    }
 }
