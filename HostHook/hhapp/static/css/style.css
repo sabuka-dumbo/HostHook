@@ -268,12 +268,13 @@
         height: 100%;
     }
 
-    .card-part1 {
-        width: 100%;
+    .card-section {
+        flex-direction: column-reverse;
     }
 
-    .card-content {
-        gap: 8px;
+    .card-part1 {
+        width: 100%;
+        height: max-content;
     }
 }
 
