@@ -397,6 +397,13 @@
 
     .start-content {
         grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
+    }
+
+    .start-item {
+        align-items: center;
+    }
+
+    .start-item-content {
+        text-align: center;
     }
 }
