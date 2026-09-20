@@ -254,6 +254,21 @@
     font-weight: normal;
 }
 
+.start-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.start-header {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 @media (max-width: 740px) {
     .services-container {
         gap: 16px;
