@@ -210,6 +210,7 @@
     .services-container {
         gap: 16px;
         flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .service-part1 {
