@@ -232,6 +232,15 @@ footer {
     .nav-part2-buttons {
         margin-left: 0px;
     }
+
+    .fpart1 {
+        gap: 32px;
+        flex-direction: column;
+    }
+
+    .p1-p2 {
+        justify-content: start;
+    }
 }
 
 @media (max-width: 740px) {
@@ -277,5 +286,25 @@ footer {
         padding: 0px 5%;
         padding-top: 112px;
         padding-bottom: 32px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .fpart2 {
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 16px;
+    }
+
+    .p2-p1, .p2-p2 {
+        width: 100%;
+    }
+
+    .p2-p1 h1 {
+        text-align: center;
+    }
+
+    .p2-p2 {
+        justify-content: center;
     }
 }
