@@ -1,19 +1,19 @@
 const burger = document.getElementById("burger");
 const burgermenu = document.getElementById("burgermenu");
 
-let open = false;
+let isopen = false;
 let cooldown = false;
 
 function openburger() {
-    if (cooldown == false) {
-        if (cooldown == false) {
-            burgermenu.style.display = "flex";
+    if (cooldown == true) return;
 
-            open = true;
-        } else {
-            burgermenu.style.display = "none";
+    if (isopen == false) {
+        burgermenu.style.display = "flex";
 
-            open = false;
-        }
+        isopen = true;
+    } else {
+        burgermenu.style.display = "none";
+
+        isopen = false;
     }
 }
