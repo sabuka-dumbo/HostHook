@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/layout.css' %}">
+        <title>{% block title %}HostHook{% endblock %}</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-part1">
+                <h1>HostHook</h1>
+
+                <div class="burger">
+                    <span class="burgerspan"></span>
+                    <span class="burgerspan"></span>
+                    <span class="burgerspan"></span>
+                </div>
+            </div>
+
+            <div class="nav-part2">
+                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">Contact</a>
+
+                <div class="nav-part2-buttons">
+                    <a href="#">Login</a>
+                    <button class="nav-button">Sign Up</button>
+                </div>
+            </div>
+        </nav>
+
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
