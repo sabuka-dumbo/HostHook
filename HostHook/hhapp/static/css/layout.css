@@ -279,6 +279,8 @@ footer {
         width: 100%;
         height: 4px;
         background-color: black;
+        position: relative;
+
     }
 
     main {
@@ -306,5 +308,73 @@ footer {
 
     .p2-p2 {
         justify-content: center;
+    }
+}
+
+@keyframes open-span1 {
+    0% {
+        rotate: 0deg;
+        top: 0px;
+    }
+
+    100% {
+        rotate: 45deg;
+        top: 8px;
+    }
+}
+
+@keyframes open-span2 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes open-span3 {
+    0% {
+        rotate: 0deg;
+        top: 0px;
+    }
+
+    100% {
+        rotate: -45deg;
+        top: -8px;
+    }
+}
+
+@keyframes close-span1 {
+    0% {
+        rotate: 45deg;
+        top: 8px;
+    }
+
+    100% {
+        rotate: 0deg;
+        top: 0px;
+    }
+}
+
+@keyframes close-span2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes close-span3 {
+    0% {
+        rotate: -45deg;
+        top: -8px;
+    }
+
+    100% {
+        rotate: 0deg;
+        top: 0px;
     }
 }
