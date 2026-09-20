@@ -6,3 +6,12 @@
     align-items: center;
     gap: 16px;
 }
+
+.hero-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
