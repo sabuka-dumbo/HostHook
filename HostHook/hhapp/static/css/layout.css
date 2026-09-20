@@ -105,6 +105,91 @@ main {
     border-radius: 6px;
 }
 
+footer {
+    height: max-content;
+    width: calc(100% - 20%);
+    padding: 48px 10%;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.part1 {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.p1-p1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.p1-title {
+    width: 100%;
+    font-size: 32px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.p1-title2 {
+    width: 100%;
+    height: max-content;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+
+}
+
+.p1-p2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    justify-content: end;
+}
+
+.fnavs1 {
+    width: max-content;
+    height: max-content;
+}
+
+.fnavs1 h1 {
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.fnav1-div {
+    width: max-content;
+    height: max-content;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.fnav1-div a {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+}
+
+
+
 @media (max-width: 768px) {
     nav {
         width: 90%;
