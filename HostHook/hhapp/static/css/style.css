@@ -202,7 +202,7 @@
 }
 
 .card-part1 {
-    width: 150%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -226,6 +226,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .card-content {
