@@ -149,4 +149,9 @@ main {
         height: 4px;
         background-color: black;
     }
+
+    main {
+        width: 90%;
+        padding: 0px 5%;
+    }
 }
