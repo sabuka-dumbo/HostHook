@@ -267,6 +267,14 @@
     .service-image {
         height: 100%;
     }
+
+    .card-part1 {
+        width: 100%;
+    }
+
+    .card-content {
+        gap: 8px;
+    }
 }
 
 @media (max-width: 480px) {
