@@ -9,12 +9,13 @@ let isopen = false;
 let cooldown = false;
 
 function openburger() {
-    if (cooldown == true) return;
+    if (cooldown) return;
 
-    if (isopen == false) {
+    cooldown = true;
+
+    if (!isopen) {
         burgermenu.style.display = "flex";
 
-        cooldown = true;
         span1.style.animation = "open-span1 ease 0.5s";
         span2.style.animation = "open-span2 ease 0.5s";
         span3.style.animation = "open-span3 ease 0.5s";
@@ -23,9 +24,8 @@ function openburger() {
         burgermenu.addEventListener("animationend", function() {
             burgermenu.style.animation = '';
             burgermenu.style.top = "calc(48px + (16px * 2))";
-
             cooldown = false;
-        });
+        }, { once: true });
 
         span3.addEventListener("animationend", function() {
             span1.style.animation = '';
@@ -38,13 +38,10 @@ function openburger() {
             span3.style.rotate = "-45deg";
 
             span2.style.opacity = "0";
-        });
+        }, { once: true });
 
         isopen = true;
     } else {
-        burgermenu.style.display = "none";
-
-        cooldown = true;
         span1.style.animation = "close-span1 ease 0.5s";
         span2.style.animation = "close-span2 ease 0.5s";
         span3.style.animation = "close-span3 ease 0.5s";
@@ -53,9 +50,9 @@ function openburger() {
         burgermenu.addEventListener("animationend", function() {
             burgermenu.style.animation = '';
             burgermenu.style.top = "-400px";
-            
+            burgermenu.style.display = "none";
             cooldown = false;
-        });
+        }, { once: true });
 
         span3.addEventListener("animationend", function() {
             span1.style.animation = '';
@@ -69,8 +66,10 @@ function openburger() {
             span3.style.rotate = "0deg";
 
             span2.style.opacity = "1";
-        });
+        }, { once: true });
 
         isopen = false;
     }
 }
+
+burger.addEventListener("click", openburger);
