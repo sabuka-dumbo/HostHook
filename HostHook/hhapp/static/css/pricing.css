@@ -232,10 +232,35 @@
 
 .start-section {
     position: relative;
-    margin: 0;
-    width: 100vw;
+    margin-left: calc((-100vw + 100%) / 2);
+    width: calc(100% + (100vw - 100%));
     height: 500px;
-    background-color: #0075de;
+    background-color: #363199;
+    margin-top: 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.start-conteiner {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.start-conteiner h1 {
+    color: white;
+    font: bold 32px "Arial", sans-serif;
+}
+
+main {
+    padding-bottom: 0px;
+}
+
+footer {
+    margin-top: 0px;
 }
 
 @media screen and (max-width: 1000px) {
