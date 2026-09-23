@@ -6,3 +6,6 @@ def index(request):
 
 def about_us(request):
     return render(request, 'about_us.html')
+
+def pricing(request):
+    return render(request, 'pricing.html')

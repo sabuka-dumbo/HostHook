@@ -39,7 +39,7 @@
     height: max-content;
     display: flex;
     flex-direction: row;
-    gap: 64px;
+    gap: 32px;
     align-items: center;
 }
 
@@ -47,6 +47,19 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    width: 100%;
+}
+
+.hero-p2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-p2 img {
+    width: 100%;
 }
 
 .hero-p1 h1 {
@@ -74,7 +87,7 @@
 }
 
 .info-section-v1 {
-    width: 100%;
+    width: calc(100% - 32px);
     height: max-content;
     display: flex;
     flex-direction: row;
@@ -175,4 +188,205 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+}
+
+.blog-section {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.blog-p1 {
+    width: 100%;
+    height: max-content;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.blog-p1 h2 {
+    height: max-content;
+    font-family: "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-p1 h1 {
+    height: max-content;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-p2 {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.blog-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.blog_item {
+  width: 100%;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 2;
+  border-radius: 16px;
+  box-shadow: 0px 4px 16px rgba(128, 128, 128, 0.11);
+  overflow: hidden;
+}
+
+.blog-item-p1 {
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: #76c0ec;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  gap: 32px;
+}
+
+.blog-item-p2 {
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  justify-content: space-between;
+}
+
+.blog-item-p2 h1 {
+    width: 100%;
+    height: max-content;
+    font: bold 24px Arial, sans-serif;
+}
+
+.blog-item-p2 h3 {
+    width: 100%;
+    height: max-content;
+    color: gray;
+    font: normal 16px Arial, sans-serif;
+}
+
+.bi-p1 {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bi-p2 {
+    width: 100%;
+    height: max-content;
+    min-height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.bi-p2 h1 {
+    width: 100%;
+    height: max-content;
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.bi-p2 img {
+    height: 48px;
+    width: auto; 
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+    background-color: antiquewhite;
+    flex-shrink: 0; 
+}
+
+.bi-p1 h2 {
+    width: 100%;
+    height: max-content;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+}
+
+.bi-p1 h1 {
+    width: 100%;
+    height: max-content;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 740px) {
+    .hero-content {
+        width: 100%;
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    .hero-p2 img {
+        width: 75%;
+    }
+
+    .words-part {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .blog-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 64px;
+    }
+
+    .info-section-v1 {
+        flex-direction: column;
+        gap: 64px;
+    }
+    
+    .i1-p2 img {
+        width: 100%;
+    }
+
+    .i1-p1 {
+        gap: 32px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-p2 img {
+        width: 100%;
+    }
 }
