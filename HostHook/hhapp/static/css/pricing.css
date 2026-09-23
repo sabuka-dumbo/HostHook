@@ -93,8 +93,9 @@
     width: 100%;
     height: max-content;
     gap: 32px;
-    display: flex;
+    display: grid;
     flex-direction: row;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .price-plan {
@@ -189,7 +190,8 @@
     width: 100%;
     height: max-content;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 6px;
 }
 
 .pricing-includes-item-div2 {
@@ -212,4 +214,35 @@
     margin: 0;
     color: gray;
     padding: 0;
+}
+
+.pricing-includes-item-div3 {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 4px;
+    padding-left: 28px;
+}
+
+.pricing-includes-item-div3 span {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1000px) {
+    .pricing-type {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 12px;
+    }
+
+    .pricing-content {
+        gap: 64px;
+    }
+
+    .pricing {
+        gap: 64px;
+    }
 }
