@@ -95,7 +95,7 @@
     gap: 32px;
     display: grid;
     flex-direction: row;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .price-plan {
@@ -244,5 +244,11 @@
 
     .pricing {
         gap: 64px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .pricing {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }
