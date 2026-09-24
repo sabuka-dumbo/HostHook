@@ -87,7 +87,7 @@
 }
 
 .info-section-v1 {
-    width: calc(100% - 32px);
+    width: 100%;
     height: max-content;
     display: flex;
     flex-direction: row;
@@ -304,7 +304,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .bi-p2 h1 {
