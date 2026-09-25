@@ -108,6 +108,7 @@ main {
   font-family: "Arial", sans-serif;
   font-weight: 600;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 footer {
