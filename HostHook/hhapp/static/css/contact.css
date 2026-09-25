@@ -1,3 +1,303 @@
 .contact-form {
     width: 100%;
+    height: max-content;
+    min-height: 64vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 64px;
+}
+
+.contact-header {
+    flex: 1;
+    width: 100%;
+    height: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contact-title {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-title h3 {
+    font: bold 16px "Arial", sans-serif;
+    width: 100%;
+    height: max-content;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-title h1 {
+    font: bold 32px "Arial", sans-serif;
+    width: 100%;
+    height: max-content;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-title p {
+    font: normal 18px "Arial", sans-serif;
+    width: 100%;
+    height: max-content;
+    margin: 0;
+    padding: 0;
+    color: gray;
+}
+
+.contact-list {
+    width: 100%;
+    height: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-list1 {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.list-div {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.list-div span {
+    font-size: 20px;
+    background-color: #007bff;
+    border-radius: 100%;
+    color: white;
+    font-weight: 500;
+}
+
+.list-div h3 {
+    font: 500 18px "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-list2 {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contact-list2 h3 {
+    width: 100%;
+    height: max-content;
+    font: normal 18px "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-p2 {
+    width: 100%;
+    height: max-content;
+    min-height: stretch;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    gap: 24px;
+}
+
+.contact-service {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-service h1 {
+    width: 100%;
+    height: max-content;
+    font: bold 16px "Arial", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.service-buttons {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    gap: 10px;
+    padding-bottom: 8px;
+}
+
+.service-btn {
+    width: max-content;
+    height: max-content;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 16px;
+    background-color: #e6f3fe;
+    color: #0075de;
+    font: normal 16px "Arial", sans-serif;
+    cursor: pointer;
+}
+
+.service-btn-active {
+    background-color: #0075de;
+    color: #eee;
+}
+
+.input-row {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.input-row-labels {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.input-row-labels label {
+    width: 100%;
+    height: max-content;
+    font: normal 14px "Arial", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.input-row-inputs {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.input-row-inputs-div {
+    width: 100%;
+    height: max-content;
+    padding: 0;
+    margin: 0;
+}
+
+.input-row-inputs-div input {
+    width: 100%;
+    height: max-content;
+    padding: 0;
+    margin: 0;
+    padding: 8px 16px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: black;
+    font: normal 16px "Arial", sans-serif;
+}
+
+.contact-p2 textarea {
+    width: 100%;
+    height: max-content;
+    min-height: 160px;
+    resize: vertical;
+    
+    /* Modern aesthetics */
+    background-color: #fcfcfc;
+    border: 2px solid #e1e1e8;
+    border-radius: 12px;
+    font: 400 18px/1.5 "Arial", sans-serif; /* Adjusted font size for better readability and cleaner look */
+    padding: 16px;
+    margin: 0;
+    color: #2b2b2b;
+    
+    /* Smooth transitions for interactive states */
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02) inset;
+}
+
+.contact-p2 textarea:hover {
+    border-color: #cbd5e1;
+    background-color: #ffffff;
+}
+
+.contact-p2 textarea:focus {
+    outline: none;
+    border-color: #6366f1;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15), 0 2px 4px rgba(0, 0, 0, 0.02) inset;
+}
+
+.contact-p2 textarea::placeholder {
+    color: #94a3b8;
+    font-style: normal;
+    opacity: 1;
+}
+
+.contact-form-submit {
+    width: 100%;
+    height: max-content;
+    padding: 16px 0px;
+    font: bold 18px "Arial", sans-serif;
+    background-color: #0075de;
+    color: white;
+}
+
+.contact-p2-part2 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-p2-part1 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-map {
+    width: 100%;
+    height: max-content;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+    .input-row-inputs {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contact-form {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .contact-list {
+        gap: 32px;
+    }
 }
