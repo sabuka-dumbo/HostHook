@@ -18,3 +18,6 @@ def register(request):
 
 def login(request):
     return render(request, 'login.html')
+
+def article(request):
+    return render(request, 'article.html')

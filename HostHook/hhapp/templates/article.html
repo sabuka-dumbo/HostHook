@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}HostHook - article name{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/article.css' %}">
+{% endblock %}
+
+{% block body %}
+    <section class="blog-page">
+        <div class="blog-header">
+            <div class="blog-header-p1">
+                <h3>Category</h3>
+                <h1>Title will be here</h1>
+                <p>Short description of the article will be shown here and it will be gray thinc text.</p>
+            </div>
+
+            <div class="blog-header-p2">
+                <div class="blog-avatar">
+                    <img src="" class="avatar-img" alt="">
+                    <div class="blog-name">
+                        <h2>Saba Dumbadze</h2>
+                        <h3>Published on 2029, 3 March</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Continue writing main article part -->
+    </section>
+{% endblock %}

@@ -1,11 +1,66 @@
 {% extends "layout.html" %}
 {% load static %}
 
-{% block title %}HostHook - Index{% endblock %}
+{% block title %}HostHook - Register{% endblock %}
 
 {% block head %}
-    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
 {% endblock %}
 
 {% block body %}
+    <section class="back-section">
+        <a class="back-link" href="{% url 'index' %}">
+            <span class="material-symbols-outlined">arrow_back</span>
+            Go back to main
+        </a>
+    </section>
+
+    <section class="login-section">
+        <div class="login-header">
+            <a href="{% url 'index' %}">HostHook</a>
+            <h1 class="login-title">Create account for <br><span>your company's website.</span></h1>
+        </div>
+
+        <form action="" class="login-form">
+            <label for="">Email:</label>
+            <input type="email" placeholder="Enter email here">
+            <label for="">Full name:</label>
+            <input type="text" placeholder="Enter full name here">
+            <label for="">Password:</label>
+            <input type="password" placeholder="Enter password here">
+            <label for="">Confirm password:</label>
+            <input type="password" placeholder="Confirm your password here">
+            <button type="submit" class="submit submit-active">Login</button>
+        </form>
+
+        <div class="or">
+            <div class="or-part">
+                <hr>
+            </div>
+
+            <div class="or-part2">
+                <p>Or continue with</p>
+            </div>
+
+            <div class="or-part">
+                <hr>
+            </div>
+        </div>
+
+        <div class="signins">
+            <div class="signin-method signin-method1">
+                <i class="fa-brands fa-google"></i>
+                <p>Google</p>
+            </div>
+
+            <div class="signin-method signin-method2">
+                <i class="fa-brands fa-apple"></i>
+                <p>Apple</p>
+            </div>
+        </div>
+
+        <div class="new-user">
+            <a href="{% url 'login' %}">Already have an account? Login here</a>
+        </div>
+    </section>
 {% endblock %}
