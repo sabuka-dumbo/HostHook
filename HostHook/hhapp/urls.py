@@ -9,4 +9,5 @@ urlpatterns = [
     path("register/", views.register, name="register"),
     path("login/", views.login, name="login"),
     path("article/", views.article, name="article"),
+    path("dashboard/<str:user>/<str:session>/", views.dashboard, name="dashboard"),
 ]

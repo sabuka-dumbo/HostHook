@@ -21,3 +21,6 @@ def login(request):
 
 def article(request):
     return render(request, 'article.html')
+
+def dashboard(request, user, session):
+    return render(request, 'dashboard.html')
