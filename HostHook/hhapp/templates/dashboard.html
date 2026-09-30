@@ -1,11 +1,116 @@
-{% extends "layout.html" %}
 {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+        {% block head %}{% endblock %}
+        <title>{% block title %}HostHook{% endblock %}</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-part1">
+                <div class="nav-brand-div">
+                    <i class="fa-solid fa-database"></i>
 
-{% block title %}HostHook - Index{% endblock %}
+                    <div class="nav-brand-info">
+                        <h1>Brand</h1>
+                        <p>dashboard</p>
+                    </div>
+                </div>
 
-{% block head %}
-    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
-{% endblock %}
+                <div class="nav-navs">
+                    <a href="" class="nav-link">
+                        <div class="nav-item">
+                            <i class="fa-solid fa-database"></i>
 
-{% block body %}
-{% endblock %}
+                            <h2>Database</h2>
+                        </div>
+                    </a>
+
+                    <a href="" class="nav-link2">
+                        <div class="nav-item2">
+                            <i class="fa-solid fa-database"></i>
+
+                            <h2>Database</h2>
+                        </div>
+                    </a>
+
+                    <a href="" class="nav-link2">
+                        <div class="nav-item2">
+                            <i class="fa-solid fa-database"></i>
+
+                            <h2>Database</h2>
+                        </div>
+                    </a>
+
+                    <a href="" class="nav-link2">
+                        <div class="nav-item2">
+                            <i class="fa-solid fa-database"></i>
+
+                            <h2>Database</h2>
+                        </div>
+                    </a>
+
+                    <a href="" class="nav-link2">
+                        <div class="nav-item2">
+                            <i class="fa-solid fa-database"></i>
+
+                            <h2>Database</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-part2">
+                <button>
+                    <span class="material-symbols-outlined">help_center</span>
+                      Documentation & Support
+                </button>
+            </div>
+        </nav>
+
+        <main>
+            <section class="main-topbar">
+                <div class="topbar-part1">
+                    <div class="topbar-directory">
+                        <h3>Project</h3>
+                        <h3>/</h3>
+
+                        <select name="" id="">
+                            <option value="">Basroba.com</option>
+                        </select>
+
+                        <h4>Free plan</h4>
+                    </div>
+                </div>
+
+                <div class="topbar-part2">
+                    <div class="search">
+                        <button class="search-button"><span class="material-symbols-outlined">search</span></button>
+                        <input type="search" name="" id="" placeholder="Go to docs... (CTRL + /)">
+                    </div>
+
+                    <div class="topbar-notification">
+                        <button class="notification-button">
+                            <span class="material-symbols-outlined">notifications</span>
+                        </button>
+                    </div>
+
+                    <div class="topbar-profile">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="">
+
+            </section>
+        </main>
+
+        <script src="https://kit.fontawesome.com/5111b3d9f7.js" crossorigin="anonymous"></script>
+        <script src="{% static 'js/layout.js' %}"></script>
+    </body>
+</html>
