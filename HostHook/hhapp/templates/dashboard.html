@@ -105,8 +105,138 @@
                 </div>
             </section>
 
-            <section class="">
+            <section class="section-title">
+                <!-- use: h1, h2, h3, p, a, button -->
+                <h1>Section title H1</h1>
+                <p>Section title p</p>
+            </section>
 
+            <section class="section-horizontal-cards-s">
+                <div class="h-s-card-item1">
+                    <div class="h-s-card-title">
+                        <h3>Card title</h3>
+                        <button class="h-s-card-rise-button">+14.2%</button>
+                    </div>
+
+                    <div class="h-s-card-content">
+                        <h4>348.2<span> K</span></h4>
+
+                        <img src="{% static 'pics/high-line1.svg' %}" alt="">
+                    </div>
+                </div>
+
+                <div class="h-s-card-item1">
+                    <div class="h-s-card-title">
+                        <h3>Card title</h3>
+                        <button class="h-s-card-rise-button">+5.2%</button>
+                    </div>
+
+                    <div class="h-s-card-content">
+                        <h4>14.2<span> TB</span></h4>
+
+                        <img src="{% static 'pics/high-line1.svg' %}" alt="">
+                    </div>
+                </div>
+
+                <div class="h-s-card-item1"> 
+                    <div class="h-s-card-title">
+                        <h3>Card title</h3>
+                        <button class="h-s-card-lower-button">-2.2%</button>
+                    </div>
+
+                    <div class="h-s-card-content">
+                        <h4>84.5<span> GB</span></h4>
+
+                        <img src="{% static 'pics/down-line1.svg' %}" alt="">
+                    </div>
+                </div>
+
+                <div class="h-s-card-item1"> 
+                    <div class="h-s-card-title">
+                        <h3>Card title</h3>
+                        <button class="h-s-card-lower-button">+8.2%</button>
+                    </div>
+
+                    <div class="h-s-card-content">
+                        <h4>1,235<span> MEMBERS</span></h4>
+
+                        <img src="{% static 'pics/down-line1.svg' %}" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-history">
+                <div class="history-header">
+                    <div class="history-header-p1">
+                        <h3>History title</h3>
+                        <p>Read recent log</p>
+                    </div>
+
+                    <div class="history-header-p2">
+                        <button>
+                            <span class="material-symbols-outlined">autorenew</span>
+                            
+                            Refresh
+                        </button>
+                    </div>
+                </div>
+
+                <table class="history-table">
+                    <thead class="history-table-thead">
+                        <tr>
+                            <th>TIME STAMP</th>
+                            <th>SERVICE MODULE</th>
+                            <th>EVENT DESCRIPTION</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+
+                    <tr>
+                        <td class="table-date">10/1/2026 - 10:23 AM</td>
+                        <td class="table-service">
+                            <div class="table-service2">
+                                <span class="material-symbols-outlined">cloud</span>
+                                <p>cloud_functions</p>
+                            </div>
+                        </td>
+                        <td class="table-description">Encrypted data of users</td>
+                        <td class="table-status">
+                            <button class="status-btn-pedding">Pedding</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-date">10/1/2026 - 10:23 AM</td>
+                        <td class="table-service">
+                            <div class="table-service2">
+                                <span class="material-symbols-outlined">cloud</span>
+                                <p>cloud_functions</p>
+                            </div>
+                        </td>
+                        <td class="table-description">Encrypted data of users</td>
+                        <td class="table-status">
+                            <button class="status-btn-active">Active</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="table-date">10/1/2026 - 10:23 AM</td>
+                        <td class="table-service">
+                            <div class="table-service2">
+                                <span class="material-symbols-outlined">cloud</span>
+                                <p>cloud_functions</p>
+                            </div>
+                        </td>
+                        <td class="table-description">Encrypted data of users</td>
+                        <td class="table-status">
+                            <button class="status-btn-inactive">Failed</button>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="history-header-end">
+                    <a href="">View whole history </a>
+                </div>
             </section>
         </main>
 
